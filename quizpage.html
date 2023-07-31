@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>myquiz</title>
+    <style>
+      *{
+        box-sizing: border-box;
+              
+      }
+
+  body {
+    background-image: url("gi.gif");
+}
+ 
+.panel {
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+    justify-content: center;
+    color: navy;
+}
+ 
+.question {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+ 
+.options {
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    top: 40%;
+    left: 40%;
+}
+#btn{
+    margin-right:10px;
+    margin-top: 2%;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #054164;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#btn2{
+  margin-right: 10px;
+    margin-top: 0%;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #054164;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+ 
+ #score {
+     font-size: 30px;
+     color: darkslategray;
+ }
+ #para{
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-weight: 500;
+   font-style: italic;
+   font-size: large;
+   color: rgb(165, 4, 4);
+   margin-right: 10px;
+     margin-top: 9%;
+     padding: 10px 20px;
+ 
+ }
+ #head{
+     text-align: center;
+     color: red;
+     background-color: rgb(200, 221, 80);
+     border: 3px solid black;
+ 
+ }
+ #head2{
+     text-align: center;
+     color: black;
+     background-color: antiquewhite;
+     padding: 0px;
+ 
+ }
+     </style>
+ </head>
+ <body>
+     <div class="panel">
+         <h1 id="head2">Welcome to shopping hub!</h1>
+         <h1 id="head">   Please complete the quiz <br>so we know you are not a robot! </h1>
+         <div class="question" id="ques"></div>
+         <div class="options" id="opt"></div>
+         <button onclick="checkAns()" id="btn">SUBMIT</button>
+         <div id="score"></div>
+         <p id="para">**Complete the Quiz first**</p>
+         <button id="btn2">SHOP NOW</button>
+
+     </div>
+     <script src="script.js"></script>
+ </body>
+ </html>
+     
+   
+  
+  
+   
+ 

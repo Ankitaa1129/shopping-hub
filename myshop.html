@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping hub</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="stylee.css">
+
+</head>
+<body>
+    <div class="container">
+      <div id="color-switcher">
+        <span class="btn4" id="aqua" onclick="changeBG('#7fffd4')"></span>
+        <span class="btn4" id="violet" onclick="changeBG('#ce9aff')"></span>
+        <span class="btn4" id="white" onclick="changeBG('#ffffff')"></span>
+        <span class="btn4" id="black" onclick="changeBG('#000000')"></span>
+    </div>
+        <div class="row" id="header2">
+            <div class="col-md-12">
+                <div class="topnav">
+                    <img class="logo" src="logo1.jpg">
+                    <img class="logo" src="home.png">
+                    <h3>SHOPPING HUB</h3>
+                    <a href="#home">CONTACT US</a>
+                    <button type="button" onclick="signin()" value="SIGN-IN NOW" class="btn6 btn-block" >SIGN-IN NOW</button> 
+                    <script>
+                      function signin() {
+                        window.location.href = "signup.html";
+                      }
+                    </script>
+                    <a href="#contact">WISHLIST</a>
+                    <a href="#about">CART</a>
+                  </div>
+            </div>
+        </div>
+        
+        
+        <div class="row">
+            <div class="col-md-12"  id="menu">
+                <ul>
+                    <li style=color:white>SALE</li>
+                    <li class="nav-item dropdown">
+                        <a style=color:white href="" class="nav-link dropdown-toggle" data-toggle="dropdown">CLOTHING</a>
+                        <div class="dropdown-menu">
+                            <a style="color: rgb(247, 8, 8);" href="" class="dropdown-item"></a>
+                            <a style="color: rgb(242, 10, 10);"  href="" class="dropdown-item">TOP</a>
+                            <a style="color: rgb(247, 6, 6);"  href="" class="dropdown-item">JEANS</a>
+                            <a  style="color: rgb(243, 8, 8);"  href="" class="dropdown-item">DRESS</a>
+                            <a style="color: rgb(238, 5, 5);" href="" class="dropdown-item">KURTA</a>
+                            <a style="color: rgb(250, 6, 6);" href="" class="dropdown-item">SHIRT</a>
+                            <a style="color: rgb(246, 5, 5);"  href="" class="dropdown-item">DUPPATTA</a>
+                            <a style="color: rgb(246, 5, 5);"  href="" class="dropdown-item">KURTA SET</a>
+                            <a style="color: rgb(246, 9, 9);"  href="" class="dropdown-item">LAHENGA</a>
+                            <a style="color: rgb(246, 9, 9);"  href="" class="dropdown-item">SAREE</a>
+                            
+                        </div>
+                    </li>
+                        
+                    <li style=color:white >SHOES</li>
+                    <li class="nav-item dropdown">
+                        <a style=color:white href=""   class="nav-link dropdown-toggle" data-toggle="dropdown">ACCESSORIES</a>
+                    <div class="dropdown-menu">
+                        <a style="color: rgb(252, 8, 8);" href="" class="dropdown-item">HAIR ACCESSORIES</a>
+                            <a style="color: rgb(243, 4, 4);"  href="" class="dropdown-item">BRACELLETS</a>
+                            <a style="color: rgb(246, 7, 7);"  href="" class="dropdown-item">PENDENTS</a> 
+                    </div>
+                    </li>
+                    <li style=color:white>BAGS</li>
+                    <li style=color:white >BEAUTY</li>
+                    <li style=color:white >WHAT'S NEW</li>
+                    <li style=color:white >CONTACT US</li>
+                </ul>
+                <form class="form-inline" action="">
+                    <input type ="search" class="form-control mr-sm-2" placeholder="search">
+                    <button class="btn btn-outline-success">search</button>
+                </form>
+            </div>
+        </div>
+        <script>
+        
+          function login(){
+            alert("LOGIN PLEASE!!");
+          }
+         setTimeout(login,5000);
+          
+        </script>
+        
+<div class="row">
+  <div class="col-md-12">
+    <h2 class="walk">WALK LIKE A QUEEN IN YOUR FAVOURITE DRESS!!</h2>
+          <div class="slideshow">
+            <ul>
+              <li>
+                <img src= "fashion.jpg">
+                <div class="caption">
+                  EASY RETURN
+                </div>
+              </li>
+              <li>
+                <img src= "WhatsApp Image 2023-07-13 at 12.50.01 PM.jpeg">
+                <div class="caption">
+                  WISHLIST NOW
+                </div>
+              </li>
+              <li>
+                <img src= "WhatsApp Image 2023-07-13 at 3.00.35 PM.jpeg">
+                <div class="caption">
+                FREE DELIVERY
+                </div>
+              </li>
+              <li>
+                <img src= "fas.jpg">
+                <div class="caption">
+                SALE 20% OFF
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </div>
+         MONSON SALE!!
+        <img class="img2" src="dress3.jpeg">
+        <h4>OFFERS ON OUR MOST SELLING PRODUCTS<br>
+        <br>BUY NOW TO GET 60-80% OFF ON OUR LATEST<br> COLLECTION.</h4>
+                    <br>
+                    <br><br>
+                      <script>
+                        const slider = document.querySelector('.slideshow');
+          const slides = slider.querySelectorAll('li');
+          
+// Store the total number of images
+         const slideCount = slides.length;
+        let activeSlide = 0;
+
+// To change the images dynamically every
+// 5 Secs, use SetInterval() method
+setInterval(() => {
+	      slides[activeSlide].classList.remove('active');
+	       activeSlide++;
+	      if (activeSlide === slideCount) {
+	      	activeSlide = 0;
+	      }
+	      slides[activeSlide].classList.add('active');
+       }, 2000);
+
+                </script>
+                    
+                    <div class="row">
+                        <div class="col-md-8 " id="content">
+                            <h2 style="background-image: url(dress8.jpeg);" id="kuch">We Provide Clothes More Than Stitched Fabric!</h2><br>
+                            <p>SOMETHING NEVER GET OLD</p>
+                           <p>Buy our latest collection!<br>with 20% OFF<br><br>on order above $349<br><br></p>
+                            </div>
+                    <div class="col-md-4" id="sidebar" style="background-image:url(giphy.gif)">
+                        <h2 style="color: rgb(52, 1, 1);">what to buy</h2>
+                        <p style="font-weight: bold;">Grab Our Latest Collection <br>of All Beauty Products!!</p>
+                        <li style="font-weight: bold;">LAKME</li>
+                        <li style="font-weight: bold;">MAYBELLINE</li>
+                        <li style="font-weight: bold;">BLUE HEAVEN</li>
+                        <li style="font-weight: bold;">ELLE 18</li>
+                        <hr>
+                        <p>Use code : beauty67</p>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="scroll-container">
+                    <h2>SECURE CHECKOUT</h2>
+                    <img src="jhu.jpg" alt="women" width="600" height="400">
+                    <img src="dress2.jpeg" alt="Fashion" width="600" height="400">
+                    <img src="photo.jpg" alt="Naari" width="600" height="400">
+                    <img src="jhumka.jpg" alt="jhumka" width="600" height="400">
+                    <h2>100% FREE WARRANTY</h2>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-12" id="special1">
+<h3>SHOP CATEGORIES</h3>
+                    </div>
+                </div>
+                    
+                  <div class="container2">
+                    <div class="row">
+                        <div class="col-md-3" style="background-image:url(giffy.gif);" > 
+                            <p>TOP TRENDING<br>  <br></p>
+                            <br>
+                    
+                            <h2>SPRING TRENDS</h2><br>
+                            <p>COLLECTION <br><br><br>
+                                 Discover Now</p>
+  
+                                <button type="button"  onclick="spring()" value="ORDER NOW"  class="btn btn-outline-danger" >EXPLORE  NOW</button> 
+                                <script>
+                                    function spring() {
+                                      window.location.href = "spring collection.html";
+                                    }
+                                  </script>
+                            </div>
+                            <div class="col-md-3" style="background-image: url(gif.gif);">
+
+                                <p>TOP WANTED TODAY</P>
+                                <br>
+                                <br>
+                                <h2> ELECTRONICS APPLIANCES</h2>
+                                <br>
+                                <p> TRENDING<br><br>
+                                Discover Now</p>
+                            
+                             <button type="button" onclick="trending()" value="ORDER NOW" class="btn btn-outline-danger" >EXPLORE NOW</button> 
+                             <script>
+                                function trending() {
+                                  window.location.href = "trending.html";
+                                }
+                              </script>
+                            </div>
+                            <div class="col-md-3" style="background-image: url(giffff3.gif);">
+                                
+                                <p>UNIQUE</p>
+                                <br>
+                                <br>
+                                <h2>PINK COLLECTION</h2>
+                                <br>
+                                <br>
+                                <p>FOR WOMEN<br>
+                                <br>
+                                Discover now</p>
+                                <button type="button" onclick="unique()" value="ORDER NOW" class="btn btn-outline-danger">EXPLORE NOW</button>
+                                <script>
+                                    function unique() {
+                                      window.location.href = "unique.html";
+                                    }
+                                  </script>
+                            </div>
+                            <div class="col-md-3" style="background-image: url(giffy.gif);">
+                                <p>MOST CAPTIVATING</p>
+                                <br>
+                                <br>
+                                <h2>BEAUTY PRODUCTS</h2>
+                                <br>
+                                <p>FOR WOMEN<br>
+                                <br>
+                                Discover now</p>
+                             <button type="button" onclick="dresses()" value="ORDER NOW" class="btn btn-outline-danger" >EXPLORE NOW</button> 
+                             <script>
+                                function dresses() {
+                                  window.location.href = "dresses.html";
+                                }
+                              </script>
+                            </div>
+                            <div class="container3">
+                              <div class="row" id="lol">                
+<div class="col-md-12" style="background-color:rgb(121, 26, 2);" >
+<h2 style="color: white;">Popular Products</h2>
+<p style="color:white;">Grab it NOW!</p>
+<br>
+</div>
+<div class="col-md-2"  id="app2" style="background-image: url(makeup.jpg);">
+<p><br><br><br><br<br><br><br>
+  <h3 style="color:rgb(131, 3, 61);">.</h3></p>
+</div>
+<div class="col-md-2"  style="background-image: url(sareee.jpg);">
+   <p> <br><br><br><br><br><br>
+    
+  </p></div>
+  <div class="col-md-2"  style="background-image: url(jwellery.jpg);">
+    <p><br><br><br><br<br><br><br><br>
+      
+    </p></div>
+    <div class="col-md-2"  style="background-image: url(lipstic.jpg);">
+      <p><br><br><br><br<br><br><br><br>
+     
+      </p></div>
+      <div class="col-md-2" id="app" style="background-image: url(dress.jpg.jpeg);">
+         <p> <br><br><br><br><br><br>
+       
+        </p>
+  </div>
+  <div class="col-md-2" id="app" style="background-image: url(WhatsApp\ Image\ 2023-07-25\ at\ 8.12.35\ PM\ \(1\).jpeg);">
+    <p> <br><br><br><br><br><br>
+    
+   </p>
+</div>
+</div>
+</div>
+<div class="col-md-9"  id="app2" style="background-color: black;">
+  <h4>Free next day delivery ,excludes sale</h4><br><br><h2>BE A CHERRY ON PIE</h2><br><h2>IN ANY SITUATION!!</h2><br><br>
+    <h4 style="color:white;">Most preffered website for women </h4>
+  </div>
+  <div class="col-md-3" id="app2" style="background-image: url(giffyy.gif);">
+     <h6>LOOKBOOK</h6><br><h6>BLOG</h6><br><h6>STYLES</h6><br>
+      <h6>FASHION WEEK</h6><br><h6>INFLUENCERS</h6><br><h6>TRENDS</h6>
+    </div>
+   
+  </div>
+</div>
+
+
+                    <div class="row">
+                        <div class="col-md-12" id="special">
+<h3>Follow For More (our social media sites):</h3> instagram-@theshoppinghub
+<img class="logo1" src="insta.jpg"> 
+ facebook-@theshoppinghub  
+ <img class="logo1" src="facebbok.png">
+                        </div>
+                    </div>
+                    
+                <div class="row" id="footer">
+                    <div class="col-md-12">
+
+                        Visit us:theshoppinghub@gmail.com
+                        </div>
+                    
+    </div>
+    <div class="row" id="footer2">
+        <div class="col-md-12">
+    <input type = "button" class="btn btn-outline-danger" onclick = "sayThanks()" value = " THANK YOU " >
+        </div>
+    </div>
+  </div>
+    
+<script>
+function sayThanks(){
+    alert("THANKS ALLOT FOR VISITING US!");
+}
+            function changeBG(color)
+            {
+                document.body.style.backgroundColor=color;
+                let hed=document.getElementsByClassName("heading");
+if(color=="#000000")
+{
+ for(let elm of hed){
+    elm.style.color="white";
+ }
+
+}
+else{
+  for(elm of hed){
+    elm.style.color="black";
+  }
+}
+            }
+    
+</script>
+</body>
+</html>
